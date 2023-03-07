@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web dengan Background Video Transparan</title>
+  <!-- Link ke Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: transparent;
+		}
+		
+		video {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			transform: translateX(-50%) translateY(-50%);
+			background: transparent;
+			opacity: 0.5;
+		}
+    .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .profile h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .profile p {
+      margin: 10px 0;
+      padding: 0;
+      font-size: 18px;
+      color: #666;
+      text-align: center;
+    }
+
+    .profile ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .profile li {
+      margin: 10px 0;
+      padding: 0;
+      font-size: 18px;
+      color: #333;
+    }
+ 
+	</style>
+</head>
+<body>
+	<video autoplay loop muted>
+		<source src="https://assets.mixkit.co/videos/preview/mixkit-clouds-and-blue-sky-background-2408-large.mp4" type="video/mp4">
+	</video>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Personal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\schedule.html">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/alvonk_/">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="profile">
+    <img src="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\foto\k.jpg" alt="Foto Profil">
+    <h1>Nama Lengkap</h1>
+    <p>Saya seorang mahasiswa S1 jurusan informatika di Universitas Sanata Dharma. Saya sangat tertarik pada bidang teknologi terutama dalam pemrograman itu membuat saya terpacu untuk belajar terus-menerus dan semakin meningkatkan kapasitas diri saya.</p>
+    <ul>
+      <li><strong>Email:</strong> alvonkaka021@email.com</li>
+      <li><strong>Telepon:</strong> 081234567890</li>
+      <li><strong>Alamat:</strong> Jalan Kenangan, RT 30, RW 12, No. 123, Jakarta Selatan</li>
+    </ul>
+  </div>
+</body>
+</html>

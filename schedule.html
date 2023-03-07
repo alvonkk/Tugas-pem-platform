@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web dengan Background Video Transparan</title>
+  <!-- Link ke Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: transparent;
+		}
+		
+		video {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			z-index: -100;
+			transform: translateX(-50%) translateY(-50%);
+			background: transparent;
+			opacity: 0.5;
+		}
+        table {
+			border-collapse: collapse;
+			width: 100%;
+			font-family: Arial, sans-serif;
+			font-size: 10px;
+		}
+
+		table th {
+			background-color: #3498db;
+			color: #fff;
+			font-weight: bold;
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #ccc;
+		}
+
+		table td {
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #ccc;
+		}
+
+		table tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		table tr:hover {
+			background-color: #e5e5e5;
+		}
+ 
+	</style>
+</head>
+<body>
+	<video autoplay loop muted>
+		<source src="https://assets.mixkit.co/videos/preview/mixkit-clouds-and-blue-sky-background-2408-large.mp4" type="video/mp4">
+	</video>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Jadwal Kuliah</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="D:\KULIAH\Semester 4\Pemrograman Berbasis Platform\schedule.html">Schedule</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/alvonk_/">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <table>
+    <thead>
+        <tr>
+            <br>
+            <th>Hari/Jam</th>
+            <th>06-07</th>
+            <th>07-08</th>
+            <th>08-09</th>
+            <th>09-10</th>
+            <th>10-11</th>
+            <th>11-12</th>
+            <th>12-13</th>
+            <th>13-14</th>
+            <th>14-15</th>
+            <th>15-16</th>
+            <th>16-17</th>
+            <th>17-18</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Senin</td>
+            <td></td>
+            <td>RPLN105 <br> IMK <br> K.207 <br> Kelas B</td>
+            <td>RPLN105 <br> IMK <br> K.207 <br> Kelas B</td>
+            <td>INFO106 <br> Pem Analisis Data <br> Lab Basis Data <br> Kelas K</td>
+            <td>INFO106 <br> Pem Analisis Data <br> Lab Basis Data <br> Kelas K</td>
+            <td></td>
+            <td></td>
+            <td>INFO105 <br> PBO <br> Lab Basis Data <br> Kelas G</td>
+            <td>INFO105 <br> PBO <br> Lab Basis Data <br> Kelas G</td>
+            <td>RPLN103 <br> Pem Platform <br> Lab Basis Data <br> Kelas E</td>
+            <td>RPLN103 <br> Pem Platform <br> Lab Basis Data <br> Kelas E</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Selasa</td>
+            <td></td>
+            <td></td>
+            <td>INFO109 <br> SDNL <br> Lab Jarkom <br> Kelas C</td>
+            <td>INFO109 <br> SDNL <br> Lab Jarkom <br> Kelas C</td>
+            <td>INFO114 <br> KomParDis <br> Lab Jarkom <br> Kelas D</td>
+            <td>INFO114 <br> KomParDis <br> Lab Jarkom <br> Kelas D</td>
+            <td>INFO113 <br> ASA <br> K.207 <br> Kelas D</td>
+            <td>INFO113 <br> ASA <br> K.207 <br> Kelas D</td>
+            <td>RPLN113 <br> ASA <br> K.207 <br> Kelas D</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Rabu</td>
+            <td></td>
+            <td>RPLN103 <br> Pem Platform <br> Lab Jarkom <br> Kelas EP</td>
+            <td>RPLN103 <br> Pem Platform <br> Lab Jarkom <br> Kelas EP</td>
+            <td>RPLN103 <br> Pem Platform <br> Lab Jarkom <br> Kelas EP</td>
+            <td>INFO109 <br> SDNL <br> Lab Jarkom <br> Kelas CP</td>
+            <td>INFO109 <br> SDNL <br> Lab Jarkom <br> Kelas CP</td>
+            <td>INFO109 <br> SDNL <br> Lab Jarkom <br> Kelas CP</td>
+            <td></td>
+            <td>MATE103 <br> Kelkulus <br> K.207 <br> Kelas E</td>
+            <td>MATE103 <br> Kelkulus <br> K.207 <br> Kelas E</td>
+            <td>MATE103 <br> Kelkulus <br> K.207 <br> Kelas E</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Kamis</td>
+            <td></td>
+            <td></td>
+            <td>RPLN104 <br> RPL <br> K.312 <br> Kelas D</td>
+            <td>RPLN104 <br> RPL <br> K.312 <br> Kelas D</td>
+            <td>INFO105 <br> PBO <br> Lab Jarkom <br> Kelas CP</td>
+            <td>INFO105 <br> PBO <br> Lab Jarkom <br> Kelas CP</td>
+            <td>INFO105 <br> PBO <br> Lab Jarkom <br> Kelas CP</td>
+            <td></td>
+            <td>RPLN104 <br> RPL <br> Lab Basis Data <br> Kelas DP</td>
+            <td>RPLN104 <br> RPL <br> Lab Basis Data <br> Kelas DP</td>
+            <td>RPLN104 <br> RPL <br> Lab Basis Data <br> Kelas DP</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Jumat</td>
+            <td></td>
+            <td>INFO106 <br> Pem Analisis Data <br> Lab Basis Data <br> Kelas KP</td>
+            <td>INFO106 <br> Pem Analisis Data <br> Lab Basis Data <br> Kelas KP</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>PPKMB002 <br> PPKMB2 <br> K.311 <br> Kelas F</td>
+            <td>PPKMB002 <br> PPKMB2 <br> K.311 <br> Kelas F</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>    
+</body>
+</html>
